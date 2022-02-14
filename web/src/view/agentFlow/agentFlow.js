@@ -169,11 +169,11 @@ export default function PersistentDrawerLeft(props) {
           switch(ctrlStatus) {
 
             case '14':
-              return <PdfViewer data = {data} status = {ctrlStatus}></PdfViewer>
+              return <PdfViewer data = {data} form = {form}  getFilterItems = {getFilterItems} status = {ctrlStatus}></PdfViewer>
             break;
       
             case '20':
-              return <PdfViewer data = {data} status = {ctrlStatus}></PdfViewer>
+              return <PdfViewer data = {data} form = {form}  getFilterItems = {getFilterItems} status = {ctrlStatus}></PdfViewer>
             break;
             
             default:

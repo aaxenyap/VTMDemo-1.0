@@ -42,14 +42,24 @@ const useStyles = makeStyles((theme) => ({
 
   }));
 
+
+
 function PdfViewer(props){
-console.log(props)
+    console.log(props)
     const classes = useStyles();
-    const {data, status} = props
+    const {data, status, form, role} = props
+    let formData = data
+
+    if(role == 'Client'){
+        formData= data
+    }
+    console.log(data)
+    console.log(formData)
+
     return(
         <SimpleCard>
             <Paper elevation={0} className={classes.paper}>
-                {status == '20'?<PDFViewer PDFViewer width = '100%' height='100%' showToolbar={false}><Form1/></PDFViewer>:<PDFViewer PDFViewer width = '100%' height='100%'><Form1/></PDFViewer>}    
+                {status == '20'?<PDFViewer PDFViewer width = '100%' height='100%' showToolbar={false}><Form1 data = {data} form = {form} /></PDFViewer>:<PDFViewer PDFViewer width = '100%' height='100%'><Form1 data = {data} form = {form}/></PDFViewer>}    
             </Paper>
         </SimpleCard>
     )

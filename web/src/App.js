@@ -121,7 +121,7 @@ function App() {
 		console.log(parseData)
 		switch(parseData.type){
 			case 'updateForm' :
-				if(JSON.stringify(parseData.data) !=JSON.stringify(lastArr)){
+				if(JSON.stringify(parseData.data) !=JSON.stringify(lastArr) && onCtrl != selectedRole){
 					// if(onCtrl != selectedRole){
 					setInputReturn(parseData.data)
 				}
@@ -345,13 +345,16 @@ function App() {
 						return <ClientConfirm/>
 					break;
 					case '14':
-						return <ThankYou/>
+						// return <ThankYou/>
+						return <ReqControl  status = {ctrlStats}/>
+						
 					break;
 					case '20':
               			return (
 						  	<div>
-								<PdfViewer data = {InputReturn} />
-								<Button  variant="contained" style={{marginLeft: 'auto' }} onClick={onConfirmHandler}>Confirm</Button>
+								<PdfViewer data = {InputReturn} role={selectedRole} form = {selectedForm} status = {ctrlStats}/>
+								<Button  variant="contained" style={{float: 'right', marginTop:10}} onClick={onConfirmHandler}>Confirm</Button>
+								<Button  variant="contained" style={{float: 'right', marginTop:10 }} onClick={onShowForm}>Reject</Button>
 						  	</div>
 						)
             		break;
