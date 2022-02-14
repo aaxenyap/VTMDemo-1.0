@@ -345,9 +345,7 @@ function App() {
 						return <ClientConfirm/>
 					break;
 					case '14':
-						// return <ThankYou/>
-						return <ReqControl  status = {ctrlStats}/>
-						
+						return <ThankYou/>						
 					break;
 					case '20':
               			return (

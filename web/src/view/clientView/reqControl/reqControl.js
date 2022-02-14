@@ -54,39 +54,23 @@ const UseStyles = makeStyles((theme) => ({
 
 }));
 
-export default function reqControl(props) {
+export default function reqControl() {
 
   const classes = UseStyles();
-  const{status} = props
-
-  const PleaseWait = () => {
-    return(
-      <div>
-        <Typography className={classes.typography} variant="h4" gutterBottom component="div" align='center' > 
-          Please Wait for Agent
-        </Typography>
-        <Typography className={classes.typography.caption} variant="caption" gutterBottom component="div" align='center' > 
-          ...Seeking agent
-        </Typography>
-      </div>
-    )
-  }
-
-  const ThankYou =() =>{
-    return(
-      <Typography className={classes.typography} variant="h4" gutterBottom component="div" align='center' > 
-        Thank you !
-      </Typography>
-    )
-    
-  }
   return (
     <div className={'root'}>
       <LinearProgress color="secondary" className ={'linear_progress'} />
 
       <SimpleCard>
       <Paper elevation={0} className={classes.paper}>
-        {status == '10'? <PleaseWait/>:<ThankYou/>}              
+        
+            <Typography className={classes.typography} variant="h4" gutterBottom component="div" align='center' > 
+              Please Wait for Agent
+            </Typography>
+            <Typography className={classes.typography.caption} variant="caption" gutterBottom component="div" align='center' > 
+              ...Seeking agent
+            </Typography>
+            
       </Paper>
         </SimpleCard>
     </div>
