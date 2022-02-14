@@ -1,0 +1,26 @@
+{
+    "Appointment application form" : [        
+        {"id":"name"  , "type": "input"   , "grid":12 , "label": "Name"             , "value": ""},
+        {"id":"cCode" , "type": "input"   , "grid":6  , "label": "Country"     , "value": ""},
+        {"id":"mobile", "type": "input"   , "grid":6  , "label": "Mobile Number"    , "value": ""},
+        {"id":"email" , "type": "input"   , "grid":12 , "label": "Email (optional)" , "value": ""},
+        {"id":"address1" , "type": "input"   , "grid":12 , "label": "Address 1" , "value": ""},
+        {"id":"address2" , "type": "input"   , "grid":12 , "label": "Address 2 (optional)" , "value": ""},
+        {"id":"poscode" , "type": "input"   , "grid":6 , "label": "Postcode" , "value": ""},
+        {"id":"state" , "type": "input"   , "grid":6 , "label": "State" , "value": ""},
+        {"id":"branch", "type": "input"   , "grid":12 , "label": "Branch" , "value": ""},
+        {"id":"req"   , "type": "input"   , "grid":12 , "label": "Request / Service required", "value": ""}
+    ],
+
+    "form2" : [        
+        {"id":"Name"   , "type": "input"   , "grid":3  , "label": "Name", "value": ""},
+        {"id":"Age"    , "type": "input"   , "grid":3  , "label": "Age", "value": ""},
+        {"id":"Gender" , "type": "input"   , "grid":3  , "label": "Gender", "value": ""},
+        {"id":"DOB"    , "type": "input"   , "grid":3  , "label": "DOB", "value": ""}
+    ],
+    "form3" : [        
+        {"id":"Book"      , "type": "input"   , "grid":3  , "label": "Name", "value": ""},
+        {"id":"Author"    , "type": "input"   , "grid":3  , "label": "Author", "value": ""},
+        {"id":"Publisher" , "type": "input"   , "grid":3  , "label": "Publisher", "value": ""}
+    ]
+}

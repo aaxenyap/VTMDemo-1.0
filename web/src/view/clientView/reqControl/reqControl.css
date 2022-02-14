@@ -1,0 +1,16 @@
+.root h1{
+    width: inherit;
+    height: 100px;
+    position: absolute;
+    top: 39%;
+    margin-top: -50px;
+    text-align: center;
+}
+
+.root .linear_progress{
+    width: 100%;
+    /* position: fixed; */
+    /* bottom:0; */
+    /* top: 40%; */
+
+}
