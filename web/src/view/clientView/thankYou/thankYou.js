@@ -1,4 +1,5 @@
 import React from 'react';
+import {Document, Page, Image, Text, View, StyleSheet, PDFViewer} from "@react-pdf/renderer";
 
 import Typography from '@mui/material/Typography';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -8,6 +9,19 @@ import SimpleCard from '@Components/Card/SimpleCard'
 import { makeStyles } from '@mui/styles';
 
 import './thankyou.css'
+
+const styles = StyleSheet.create({
+  image:{
+    width: '600px',
+    height: '80px',
+    float: 'left',
+    marginTop:0,
+    padding: 0,
+  }
+
+ 
+});
+
 
 const UseStyles = makeStyles((theme) => ({
 
@@ -26,11 +40,20 @@ const UseStyles = makeStyles((theme) => ({
       marginTop: '2%'
   },
 
+  image:{
+    width: '50px',
+    height: '80px',
+    float: 'left',
+    marginTop:0,
+    padding: 0,
+  },
+
   typography:{
       fontWeight:"bold",
       borderLeft: 5,
       borderColor: "#000",
       marginTop:'22rem!important',
+      color: '#4175b5',
 
       caption:{
         fontWeight:"bold",
@@ -64,6 +87,9 @@ export default function thankYou() {
 
       <SimpleCard>
       <Paper elevation={0} className={classes.paper}>
+            
+      {/* <Text style={styles.bankTitle}> <Image style={styles.image} src="assets\img\logo.png"/>
+              </Text> */}
         
             <Typography className={classes.typography} variant="h4" gutterBottom component="div" align='center' > 
             Thank you agent is working on it

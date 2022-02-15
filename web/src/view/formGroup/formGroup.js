@@ -65,7 +65,7 @@ export default function BasicButtonGroup(props) {
             return(
               <SplideSlide >
                   <a key ={item} data-value = {item} onClick={onClickHandler} >
-                    <img className= {classes.img} src="assets\img\image1.png" alt="Image 1" width="100" />
+                    <img className= {classes.img} src="assets\img\image1.png" alt="Image 1" width="70" />
                     <Typography className={classes.btnLabel} variant="caption" display="block" gutterBottom noWrap>{item}</Typography>
                   </a>
               </SplideSlide>

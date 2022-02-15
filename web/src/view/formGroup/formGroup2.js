@@ -53,7 +53,7 @@ export default function BasicButtonGroup(props) {
                 <div>
                     <Tooltip title={item} placement="right">
                         <a key ={item} data-value = {item} onClick={onClickHandler} >
-                            <img className= {classes.img} src="assets\img\image1.png" alt="Image 1" width="100" />
+                            <img className= {classes.img} src="assets\img\image1.png" alt="Image 1" width="70" />
                             <Typography className={classes.btnLabel} variant="caption" display="block" gutterBottom noWrap>{item}</Typography>
                         </a>
                     </Tooltip>

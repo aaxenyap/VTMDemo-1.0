@@ -27,11 +27,13 @@ const UseStyles = makeStyles((theme) => ({
       marginTop: '2%'
   },
 
+
   typography:{
       fontWeight:"bold",
       borderLeft: 5,
       borderColor: "#000",
       marginTop:'22rem!important',
+      color: '#4175b5',
 
       caption:{
         fontWeight:"bold",
@@ -68,7 +70,7 @@ export default function reqControl() {
               Please Wait for Agent
             </Typography>
             <Typography className={classes.typography.caption} variant="caption" gutterBottom component="div" align='center' > 
-              ...Seeking agent
+              ... agent is assisting
             </Typography>
             
       </Paper>

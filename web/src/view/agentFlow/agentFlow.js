@@ -59,11 +59,21 @@ const UseStyles = makeStyles((theme) => ({
       borderLeft: 5,
       borderColor: "#000",
       marginTop:'22rem!important',
+      fontSize: '20px',
+      color: '#4175b5',
 
       caption:{
         fontWeight:"bold",
       }
-  }
+  },
+
+  completeBtn:{
+    color:'#8dc259 !important'
+  },
+
+  modifyBtn:{
+    color:'#ffb348 !important'
+  },
 
 }));
 
@@ -203,8 +213,8 @@ export default function PersistentDrawerLeft(props) {
           <Typography variant="h6" noWrap component="div">
             Agent
           </Typography>
-            { ctrlStatus == '12'? <Button variant="outlined" color="inherit" style={{marginLeft: 'auto' }} onClick = {getDoneFill}>Done</Button>:null}
-            { ctrlStatus == '20'? <Button variant="outlined" color="inherit" style={{marginLeft: 'auto' }} onClick = {getShowForm}>Modify</Button>:null}
+            { ctrlStatus == '12'? <Button className={classes.completeBtn} variant="outlined" color="inherit" style={{marginLeft: 'auto' }} onClick = {getDoneFill}>Complete Filling</Button>:null}
+            { ctrlStatus == '20'? <Button className={classes.modifyBtn} variant="outlined" color="inherit" style={{marginLeft: 'auto' }} onClick = {getShowForm}>Modify</Button>:null}
         </Toolbar>
       </AppBar>
       <Drawer

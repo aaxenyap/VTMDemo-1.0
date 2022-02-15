@@ -76,7 +76,9 @@ const useStyles = makeStyles((theme) => ({
 		position:"fixed!important",
 		top:'45%',
 		right:10
-	}
+	},
+
+
   }));
 
 function App() {
@@ -351,8 +353,8 @@ function App() {
               			return (
 						  	<div>
 								<PdfViewer data = {InputReturn} role={selectedRole} form = {selectedForm} status = {ctrlStats}/>
-								<Button  variant="contained" style={{float: 'right', marginTop:10}} onClick={onConfirmHandler}>Confirm</Button>
-								<Button  variant="contained" style={{float: 'right', marginTop:10 }} onClick={onShowForm}>Reject</Button>
+								<Button  variant="contained" style={{float: 'right', marginTop:10, marginRight: '10px', height: '50px', background: '#5da446'}} onClick={onConfirmHandler}>Confirm</Button>
+								<Button  variant="contained" style={{float: 'right', marginTop:10, marginRight: '10px', height: '50px', background: '#c44b4b' }} onClick={onShowForm}>Reject</Button>
 						  	</div>
 						)
             		break;

@@ -1,26 +1,42 @@
 {
-    "Appointment application form" : [        
-        {"id":"name"  , "type": "input"   , "grid":12 , "label": "Name"             , "value": ""},
-        {"id":"cCode" , "type": "input"   , "grid":6  , "label": "Country"     , "value": ""},
+
+    "Credit Card Application Form" : [        
+        {"id":"Name"   , "type": "input"   , "grid":12  , "label": "Name", "value": ""},
+        {"id":"Age"    , "type": "input"   , "grid":4  , "label": "Age", "value": ""},
+        {"id":"Gender" , "type": "input"   , "grid":4  , "label": "Gender", "value": ""},
+        {"id":"DOB"    , "type": "input"   , "grid":4  , "label": "DOB", "value": ""},
         {"id":"mobile", "type": "input"   , "grid":6  , "label": "Mobile Number"    , "value": ""},
-        {"id":"email" , "type": "input"   , "grid":12 , "label": "Email (optional)" , "value": ""},
+        {"id":"email" , "type": "input"   , "grid":6 , "label": "Email (optional)" , "value": ""},
         {"id":"address1" , "type": "input"   , "grid":12 , "label": "Address 1" , "value": ""},
         {"id":"address2" , "type": "input"   , "grid":12 , "label": "Address 2 (optional)" , "value": ""},
         {"id":"poscode" , "type": "input"   , "grid":6 , "label": "Postcode" , "value": ""},
         {"id":"state" , "type": "input"   , "grid":6 , "label": "State" , "value": ""},
         {"id":"branch", "type": "input"   , "grid":12 , "label": "Branch" , "value": ""},
-        {"id":"req"   , "type": "input"   , "grid":12 , "label": "Request / Service required", "value": ""}
+        {"id":"req"   , "type": "input"   , "grid":6 , "label": "Credit Card Type", "value": ""},
+        {"id":"req"   , "type": "input"   , "grid":6 , "label": "Credit Card Limit", "value": ""}        
     ],
-
-    "form2" : [        
-        {"id":"Name"   , "type": "input"   , "grid":3  , "label": "Name", "value": ""},
-        {"id":"Age"    , "type": "input"   , "grid":3  , "label": "Age", "value": ""},
-        {"id":"Gender" , "type": "input"   , "grid":3  , "label": "Gender", "value": ""},
-        {"id":"DOB"    , "type": "input"   , "grid":3  , "label": "DOB", "value": ""}
+    "Change of Mailing Address (For Personal Customer)" : [        
+        {"id":"name"  , "type": "input"   , "grid":12 , "label": "Name"             , "value": ""},
+        {"id":"cCode" , "type": "input"   , "grid":6  , "label": "Identification Type"     , "value": ""},
+        {"id":"mobile", "type": "input"   , "grid":6  , "label": "Identification Number"    , "value": ""},
+        {"id":"email" , "type": "input"   , "grid":6 , "label": "Effective Date" , "value": ""},
+        {"id":"address1" , "type": "input"   , "grid":12 , "label": "Address Type" , "value": ""},
+        {"id":"address2" , "type": "input"   , "grid":12 , "label": "New Mailing Address" , "value": ""},
+        {"id":"poscode" , "type": "input"   , "grid":6 , "label": "Postcode" , "value": ""},
+        {"id":"state" , "type": "input"   , "grid":6 , "label": "District" , "value": ""},
+        {"id":"branch", "type": "input"   , "grid":12 , "label": "Correspondence Address" , "value": ""},
+        {"id":"poscode" , "type": "input"   , "grid":6 , "label": "Postcode" , "value": ""},
+        {"id":"state" , "type": "input"   , "grid":6 , "label": "District" , "value": ""}
     ],
-    "form3" : [        
-        {"id":"Book"      , "type": "input"   , "grid":3  , "label": "Name", "value": ""},
-        {"id":"Author"    , "type": "input"   , "grid":3  , "label": "Author", "value": ""},
-        {"id":"Publisher" , "type": "input"   , "grid":3  , "label": "Publisher", "value": ""}
+    "Service Complaint Form" : [        
+        {"id":"name"  , "type": "input"   , "grid":12 , "label": "Name"             , "value": ""},
+        {"id":"mobile", "type": "input"   , "grid":6  , "label": "Mobile Number"    , "value": ""},
+        {"id":"email" , "type": "input"   , "grid":6 , "label": "Email" , "value": ""},
+        {"id":"poscode" , "type": "input"   , "grid":4 , "label": "Location" , "value": ""},
+        {"id":"poscode" , "type": "input"   , "grid":4 , "label": "Time Period" , "value": ""},
+        {"id":"poscode" , "type": "input"   , "grid":4 , "label": "Staff" , "value": ""},
+        {"id":"address1" , "type": "input"   , "grid":12 , "label": "Complaint Type" , "value": ""},
+        {"id":"address2" , "type": "input"   , "grid":12 , "label": "Issues Explanation" , "value": ""},
+        {"id":"state" , "type": "input"   , "grid":12 , "label": "Suggestion (if have any)" , "value": ""}
     ]
 }

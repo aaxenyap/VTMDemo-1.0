@@ -85,7 +85,7 @@ import { padding } from '@mui/system';
     inputText:{
       width:'100%',
       height:20,
-      border:'1px solid #333',
+      border:'1px solid #959595',
       fontSize:9,
       padding:5,
       marginBottom:10,
@@ -96,6 +96,21 @@ import { padding } from '@mui/system';
       bottom:10,
       width:'100%',
       textAlign:'center',
+    },
+
+    image:{
+      width: '600px',
+      height: '80px',
+      float: 'left',
+      marginTop:0,
+      padding: 0,
+    },
+    formdetails:{
+      width: '550px',
+      height: '100px',
+      float: 'left',
+      marginTop:0,
+      padding: 0,
     }
 
 
@@ -116,12 +131,12 @@ import { padding } from '@mui/system';
               <Grid container spacing={6}>
               
               <Text style={styles.bankTitle}> <Image style={styles.image} src="assets\img\logo.png"/>
-                &nbsp;ABC BANK
               </Text>
 
-              <Text style={styles.title} >ABC Bank (Malaysia)Berhad and ABC Amanah (Malaysia) Berhad(</Text>
               <Text style={styles.subtitle}>&nbsp; {form.replace(/^./, form[0].toUpperCase())}</Text>
-              <Text style={styles.group}>1. &nbsp; Personal Details</Text>
+              <Text style={styles.bankTitle}> <Image style={styles.formdetails} src="assets\img\formdetails.png"/>
+              </Text>
+              <Text style={styles.group}> General Information</Text>
           
                 {
                   filterItem.map((item)=>{
